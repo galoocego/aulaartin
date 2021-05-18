@@ -15,6 +15,9 @@ app.use(middleware)
 //Fechada
 require("./controllers/usuarios")(app)
 
+app.get("/", (req, res) => {
+    res.send("chegou")
+})
 app.listen(3001, () => {
     console.log("servidor online")
 })
