@@ -18,6 +18,6 @@ require("./controllers/usuarios")(app)
 app.get("/", (req, res) => {
     res.send("chegou")
 })
-app.listen(proccess.env.PORT || 3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("servidor online")
 })
